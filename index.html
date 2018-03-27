@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#canvas{
+				display: block;
+				background: black;
+				margin: 50px auto;
+			}
+			#info{
+				width: 480px;
+				height: 480px;
+				position: absolute;
+				left: 50%;
+				margin-left: -240px;
+				top: 50px;
+				background: cornflowerblue;
+			}
+			#strat{
+				width: 100px;
+				height: 50px;
+				margin: 50px 0 30px 190px;
+				text-align: center;
+				line-height: 50px;
+				color: black;
+				background: hotpink;
+				border: none;
+				border-radius: 10px;
+			}
+			#xinxi{
+				width: 100px;
+				height: 50px;
+				margin: 0px 0 30px 190px;
+				text-align: center;
+				line-height: 50px;
+				color:black;
+				background: hotpink;
+				border: none;
+				border-radius: 10px;
+			}
+			#jieshao{
+				width: 400px;
+				height: 200px;
+				margin: 0 0 0 40px;
+				line-height: 30px;
+				text-align: center;
+				color: white;
+				opacity: 0;
+			}
+			h1{
+				text-align: center;
+				font-size: 30px;
+				margin-top: 20px;
+			}
+			#uls{
+				width: 120px;
+				height: 200px;
+				position: absolute;
+				top: 150px;
+				right: 250px;		
+			}
+			#uls .lis{
+				width: 32px;
+				height: 32px;
+				margin-right: 8px;
+				margin-bottom: 10px;
+				background: url(img/tankAll.gif) no-repeat -128px -64px;
+				list-style: none;
+				float: left;
+				border-radius: ;
+			}
+			#pic{
+				width: 26px;
+				height: 26px;
+				background:url(img/tankAll.gif) no-repeat left -112px;
+				position: absolute;
+				display: none;
+			}
+			#next{
+				width: 80px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 20px;
+				border: none;
+				border-radius: 10px;
+				background: hotpink;
+				position: absolute;
+				top: 300px;
+				left: 200px;			
+				}
+		</style>
+	</head>
+	<body >
+		<canvas id="canvas" width="480px" height="480px"></canvas>
+		<img src="img/tankAll.gif" style="display: none;" id="imgs"> 
+		<div id="info">
+			<h1>经典游戏之坦克大战</h1>
+			<input type="button" value="开始游戏" id="strat"/>
+			<input type="button" value="游戏介绍" id="xinxi"/>
+			<div id="jieshao">
+				游戏版本1.0.0，实现了简单版的坦克大战；
+				<br />
+				键位控制，wsad控制上下左右,j键控制子弹发射；
+				<br />
+				玩家生命为6条；
+			</div>
+		</div>
+		<ul id="uls">
+		</ul>
+		<div id="pic"></div>
+		<input id="next" value="下一关" type="button" onclick="next()"/>
+	</body>
+	<script type="text/javascript" src="js/tool.js" ></script>
+	<script src="js/leavel.js"></script>
+	<script type="text/javascript" src="js/tank_and_bullet.js" ></script>
+	<script type="text/javascript" src="js/herotank.js" ></script>
+	<script type="text/javascript" src="js/emerytank.js" ></script>
+	<script src="js/main.js"></script>
+</html>
